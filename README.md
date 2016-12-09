@@ -1,6 +1,3 @@
-# itggot-1E
+# ITGGOT-1E-POKER
 
-1E's repository
-
-Offentliga projekt finns här. Fork and clone at your own risk.
-
+Repository för poker spelet.
