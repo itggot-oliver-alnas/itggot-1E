@@ -1,15 +1,17 @@
 class Deck
-  @@card = 52
+  @@card1 = 13
+  @@card2 = 13
+  @@card3 = 13
+  @@card4 = 13
 
   def colour
-    @hearts = 1
-    @diamonds = 2
-    @spades = 3
-    @clubs = 4
+    @hearts = "H"
+    @diamonds = "D"
+    @spades = "S"
+    @clubs = "C"
   end
 
   def value
-    low_ace = 1
     two = 2
     three = 3
     four = 4
@@ -22,10 +24,21 @@ class Deck
     jack = 11
     queen = 12
     king = 13
-    ace = 14
+    ace = [1,14]
+    list = [two,three,four,five,six,seven,eight,nine,ten,jack,queen,king,ace]
   end
 
   def initalize(colour, value)
     @@card_colour
     @@card_value
+    @card_hand1 = []
+    list.each do |x|
+     @card_hand1 = @@card1 + @hearts + x
+    end
+    return card_hand1
   end
+end
+
+puts colour
+puts value
+puts initalize
